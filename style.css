@@ -1,0 +1,126 @@
+.menu{
+	box-sizing: border-box;
+	background-color:#e5e5e5;
+	box-shadow: 4px 10px 30px rgba(0,0,0,0.70);
+	border-radius:25px;
+	margin: auto;
+	width: 60%;
+	text-align:center;
+	font-family: 'Poppins', sans-serif;
+	padding: 5px;
+	display:block;
+}
+
+@media only screen and (max-width:1100px){
+	.menu{
+		width: 95%;
+	}		
+}
+
+/* Social Media Icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 1;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+/* Instagram */
+.fa-instagram {
+  background: #f40474;
+  color: white;
+}
+
+/* Drop down menu buttons */
+.dropbtn {
+  background-image: rgba(0,0,0,0.00);
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  border: none;
+  border-radius: 20px;
+  width: 200px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 18px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-radius: 18px;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background: lightgrey;}
+
+.menu {
+animation: fadeIn ease 1s;
+-webkit-animation: fadeIn ease 1.5s;
+-moz-animation: fadeIn ease 1.5s;
+-o-animation: fadeIn ease 1.5s;
+-ms-animation: fadeIn ease 1.5s;
+}
+@keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
