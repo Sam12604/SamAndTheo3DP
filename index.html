@@ -1,0 +1,118 @@
+<html style="background-image: linear-gradient(130deg, #f8010c 0%, #f95600 25%, #f7054f 70%, #f95303 90%);">
+
+<head>
+	<!-- Set title and favicon -->
+	<title>LaterPost</title>
+	<link rel="icon" type="image/ico" href="favicon.ico">
+
+	<!-- Fonts and Icons-->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- CSS stles and js -->
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+
+	$(document).ready(function(){
+	  // Add smooth scrolling to all links
+	  $("a").on('click', function(event) {
+
+	    // Make sure this.hash has a value before overriding default behavior
+	    if (this.hash !== "") {
+	      // Prevent default anchor click behavior
+	      event.preventDefault();
+
+	      // Store hash
+	      var hash = this.hash;
+
+	      // Using jQuery's animate() method to add smooth page scroll
+	      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+	      $('html, body').animate({
+	        scrollTop: $(hash).offset().top
+	      }, 800, function(){
+
+	        // Add hash (#) to URL when done scrolling (default click behavior)
+	        window.location.hash = hash;
+	      });
+	    } // End if
+	  });
+	});
+	</script>
+</head>
+
+<!-- Begining of HTML layout -->
+
+<body>
+	<br><br>
+
+	<a href="index">
+		<div id="title" class="menu">	
+	  		<img src="favicon.png" style="width: 20%;border-radius: 20%;">
+		</div>
+	</a>
+
+	<br><br>
+
+	<div id="title" class="menu"> 		
+  		<h1 style="font-size: 30px;text-align: center;"><marquee behavior="scroll" direction="left">THIS WEBSITE IS UNDER CONSTRUCTION - email <a href="mailto:hi@SamHarris.xyz">hi@SamHarris.xyz</a> for more information!</marquee></h1>
+	</div>
+
+	<br><br>
+
+	<div id="menubar" class="menu">
+		<div class="dropdown">
+		  <button class="dropbtn">About Us</button>
+		  <div class="dropdown-content">
+		    <a href="#">How we started</a>
+		    <a href="#">What we do with our profits</a>
+		  </div>		  
+		</div>
+
+		<div class="dropdown">
+		  <button class="dropbtn">Contact Us</button>
+		  <div class="dropdown-content">
+		    <a href="mailto:sam@LaterPost.org">E-Mail</a>
+		    <a href="#socials">Social Media</a>
+		    <a href="#press"><s>Press</s></a>
+		    <a href="bulk">Bulk Orders</a>
+		  </div>		  
+		</div>
+
+		<div class="dropdown">
+		  <button class="dropbtn">Get Started</button>
+		  <div class="dropdown-content">
+		    <a href="#form">Make a letter</a>
+		    <a href="#examples">Examples</a>
+		  </div>
+		</div>	
+	</div>
+
+	<br><br>
+
+  	<iframe id="form" class="menu" frameborder="0" style="height:1700px;border:none;" src='https://forms.zohopublic.eu/virtualoffice710/form/Test/formperma/lHeQIntqjQ3u9dzFzwt44PiVPw-bUUJR6dkI1DOsWAc'>Your Browser is not Supported - please upgrade!</iframe>
+
+	<br><br>
+
+	<div id="footer-advert" class="menu"><h1>Advert Placeholder</h1></div>
+
+	<br><br>
+
+	<div id="socials" class="menu"> 		
+  		<a href="http://LaterPost.samharris.xyz/w_facebook" class="fa fa-facebook"></a>
+  		<a href="http://LaterPost.samharris.xyz/w_twitter" class="fa fa-twitter"></a>
+  		<a href="http://LaterPost.samharris.xyz/w_instagram" class="fa fa-instagram"></a>
+	</div>
+
+	<br><br>
+
+	<div id="footer" class="menu">
+		LaterPost 2021 © - All Rights Reserved<br>
+		Read our <a href="t&cs">Terms and Conditions</a><br>
+	</div>
+
+	<br><br>
+</body>
+</html>
