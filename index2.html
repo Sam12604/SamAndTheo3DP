@@ -1,0 +1,133 @@
+<html style="background-image: linear-gradient(130deg, #f8010c 0%, #f95600 25%, #f7054f 70%, #f95303 90%);">
+
+<head>
+	<!-- Set title and favicon -->
+	<title>SamAndTheo3DP</title>
+	<link rel="icon" type="image/ico" href="favicon.png">
+
+	<script data-ad-client="ca-pub-5521618430511279" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+	<!-- Fonts and Icons-->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- CSS stles and js -->
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+
+	$(document).ready(function(){
+	  // Add smooth scrolling to all links
+	  $("a").on('click', function(event) {
+
+	    // Make sure this.hash has a value before overriding default behavior
+	    if (this.hash !== "") {
+	      // Prevent default anchor click behavior
+	      event.preventDefault();
+
+	      // Store hash
+	      var hash = this.hash;
+
+	      // Using jQuery's animate() method to add smooth page scroll
+	      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+	      $('html, body').animate({
+	        scrollTop: $(hash).offset().top
+	      }, 800, function(){
+
+	        // Add hash (#) to URL when done scrolling (default click behavior)
+	        window.location.hash = hash;
+	      });
+	    } // End if
+	  });
+	});
+	</script>
+</head>
+
+<!-- Begining of HTML layout -->
+
+<body>
+	<!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v9.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your Chat Plugin code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="101789131518115"
+  		theme_color="#f8010c">
+      </div>
+
+	<br><br>
+
+	<center>
+		<a href="">
+		  	<img src="favicon.png" height="150px" width="150px" style="box-shadow: 4px 10px 30px rgba(255,255,255,0.70);">
+		</a>
+	</center>
+
+	<br><br>
+
+	<div id="menubar" class="menu">
+		<div class="dropdown">
+		  <button class="dropbtn">About Us</button>
+		  <div class="dropdown-content">
+		    <a href="#">Link 1</a>
+		    <a href="#">Link 2</a>
+		  </div>		  
+		</div>
+
+		<div class="dropdown">
+		  <button class="dropbtn">Contact Us</button>
+		  <div class="dropdown-content">
+		    <a href="mailto:hi@SamAndTheo3DP.com">E-Mail</a>
+		    <a href="https://m.me/Sam.Theo3DP">Messanger</a>
+		    <a href="#socials">Social Media</a>
+		  </div>		  
+		</div>
+
+		<div class="dropdown">
+		  <button class="dropbtn">Shop</button>
+		  <div class="dropdown-content">
+		    <a href="https://shop.SamAndTheo3DP.com">Etsy</a>
+		    <a href="#">Commissions</a>
+		  </div>
+		</div>	
+	</div>
+
+	<br><br>
+
+	<div class="menu"><nr><br><br></div>
+
+	<br><br>	
+
+	<div id="socials" class="menu"> 		
+  		<a href="https://links.SamAndTheo3DP.com/facebook" class="fa fa-facebook"></a>
+  		<a href="https://links.SamAndTheo3DP.com/instagram" class="fa fa-instagram"></a>
+	</div>
+
+	<br><br>
+
+	<div id="footer" class="menu">
+		SamAndTheo3DP 2021 © - All Rights Reserved<br>
+		Website by Sam Harris :)<br>
+	</div>
+
+	<br><br><br><br><br>
+</body>
+</html>
