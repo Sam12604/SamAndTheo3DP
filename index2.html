@@ -43,6 +43,20 @@
 	  });
 	});
 	</script>
+
+	<script type="text/javascript">
+		$("#slideshow > div:gt(0)").hide();
+
+		setInterval(function() { 
+		  $('#slideshow > div:first')
+		    .fadeOut(1000)
+		    .next()
+		    .fadeIn(1000)
+		    .end()
+		    .appendTo('#slideshow');
+		},  3000);
+	</script>
+
 </head>
 
 <!-- Begining of HTML layout -->
@@ -75,11 +89,17 @@
 
 	<br><br>
 
-	<center>
-		<a href="">
-		  	<img src="favicon.png" height="150px" width="150px" style="box-shadow: 4px 10px 30px rgba(255,255,255,0.70);">
-		</a>
-	</center>
+	<div class="menu" id="slideshow">
+	   <div>
+	     <img src="//farm6.static.flickr.com/5224/5658667829_2bb7d42a9c_m.jpg">
+	   </div>
+	   <div>
+	     <img src="//farm6.static.flickr.com/5230/5638093881_a791e4f819_m.jpg">
+	   </div>
+	   <div>
+	     Pretty cool eh? This slide is proof the content can be anything.
+	   </div>
+	</div>
 
 	<br><br>
 
