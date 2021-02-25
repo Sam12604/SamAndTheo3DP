@@ -141,3 +141,13 @@ animation: fadeIn ease 1s;
     right: 10px; 
     bottom: 10px; 
 }
+
+.footer {
+  box-sizing: border-box;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  padding: 5px;
+  display:block;
+}
