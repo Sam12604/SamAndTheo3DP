@@ -14,42 +14,10 @@
 @media only screen and (max-width:1100px){
 	.menu{
 		width: 95%;
-	}		
-}
-
-/* Social Media Icons */
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-}
-
-/* Add a hover effect if you want */
-.fa:hover {
-  opacity: 1;
-}
-
-/* Set a specific color for each brand */
-
-/* Facebook */
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-
-/* Twitter */
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-
-/* Instagram */
-.fa-instagram {
-  background: #f40474;
-  color: white;
+	}
+  .banner{
+    width: 85%;
+  }		
 }
 
 /* Drop down menu buttons */
@@ -123,23 +91,6 @@ animation: fadeIn ease 1s;
 @-ms-keyframes fadeIn {
 0% {opacity:0;}
 100% {opacity:1;}
-}
-
-#slideshow { 
-    margin: 50px auto; 
-    position: relative; 
-    width: 240px; 
-    height: 240px; 
-    padding: 10px; 
-    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
-}
-
-#slideshow > div { 
-    position: absolute; 
-    top: 10px; 
-    left: 10px; 
-    right: 10px; 
-    bottom: 10px; 
 }
 
 .footer {
