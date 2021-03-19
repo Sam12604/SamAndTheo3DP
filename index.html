@@ -30,6 +30,44 @@
 <link rel="stylesheet" href="style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+	  // Add smooth scrolling to all links
+	  $("a").on('click', function(event) {
+
+	    // Make sure this.hash has a value before overriding default behavior
+	    if (this.hash !== "") {
+	      // Prevent default anchor click behavior
+	      event.preventDefault();
+
+	      // Store hash
+	      var hash = this.hash;
+
+	      // Using jQuery's animate() method to add smooth page scroll
+	      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+	      $('html, body').animate({
+	        scrollTop: $(hash).offset().top
+	      }, 800, function(){
+
+	        // Add hash (#) to URL when done scrolling (default click behavior)
+	        window.location.hash = hash;
+	      });
+	    } // End if
+	  });
+	});
+	</script>
+	<script type="text/javascript">
+		$("#slideshow > div:gt(0)").hide();
+
+		setInterval(function() { 
+		  $('#slideshow > div:first')
+		    .fadeOut(1000)
+		    .next()
+		    .fadeIn(1000)
+		    .end()
+		    .appendTo('#slideshow');
+		},  3000);
+</script>
 </head>
 
 <body>
@@ -42,29 +80,29 @@
 
 <div id="menubar" class="menu">
 	<div class="dropdown">
-	  <button class="dropbtn">About Us</button>
-	  <div class="dropdown-content">
-	    <a href="#">Link 1</a>
-	    <a href="#">Link 2</a>
-	  </div>		  
+	<button class="dropbtn">About Us</button>
+	<div class="dropdown-content">
+		<a href="#">Link 1</a>
+		<a href="#">Link 2</a>
+	</div>		  
 	</div>
 
 	<div class="dropdown">
-	  <button class="dropbtn">Contact Us</button>
-	  <div class="dropdown-content">
-	    <a href="mailto:hi@SamAndTheo3DP.com">E-Mail</a>
-	    <a href="https://m.me/Sam.Theo3DP">Messenger</a>
-	    <a href="#socials">Social Media</a>
-	  </div>		  
+	<button class="dropbtn">Contact Us</button>
+	<div class="dropdown-content">
+		<a href="mailto:hi@SamAndTheo3DP.com">E-Mail</a>
+		<a href="https://m.me/Sam.Theo3DP">Messenger</a>
+		<a href="#socials">Social Media</a>
+	</div>		  
 	</div>
 
 	<div class="dropdown">
-	  <button class="dropbtn">Shop</button>
-	  <div class="dropdown-content">
-	    <a href="https://shop.SamAndTheo3DP.com">Etsy</a>
-	    <a href="#">Commissions</a>
-	  </div>
-	</div>	
+	<button class="dropbtn">Shop</button>
+	<div class="dropdown-content">
+		<a href="https://shop.SamAndTheo3DP.com">Etsy</a>
+		<a href="#">Commissions</a>
+	</div>
+	</div>
 </div>
 
 <br><br>
@@ -76,14 +114,14 @@
 <br><br>
 
 <div id="socials" class="footer">
-	<div>
+	<div class="socials">
+		<p style="color: white; font-style: italic; margin-bottom: 2px; font-size: large;">Contact Us:</p>
 		<a href="https://links.SamAndTheo3DP.com/facebook"><img src="img/icons/facebook.svg" height="30px" width="40px"></a>
 		<a href="https://links.SamAndTheo3DP.com/instagram"><img src="img/icons/instagram.svg" height="30px" width="40px"></a>
 		<!-- <a href="#"><img src="img/icons/tiktok.svg" height="30px" width="40px"></a> -->
 		<a href="https://m.me/Sam.Theo3DP"><img src="img/icons/messenger.svg" height="30px" width="40px"></a>
 		<a href="mailto:hi@SamAndTheo3DP.com"><img src="img/icons/email.svg" height="30px" width="40px"></a>
-		<p style="color: white; font-style: italic;">SamAndTheo3DP 2021 © - All Rights Reserved</p>
-		<p style="color: white; font-style: italic;">Website Contact - <a href="mailto:sam@SamAndTheo3DP.com"> sam@SamAndTheo3DP.com</a></p>
+		<p style="color: white; font-style: italic; margin-top: 2px; font-size: small;">SamAndTheo3DP 2021 © - All Rights Reserved</p>
 	</div>
 </div>
 </body>
