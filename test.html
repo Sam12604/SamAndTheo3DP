@@ -7,7 +7,6 @@
 <meta name="description" content="3D Printed Products and Custom 3D Printing Commissions">
 <meta name="author" content="Sam Harris">
 <link rel="icon" type="image/ico" href="favicon.png">
-<meta http-equiv="refresh" content="0; URL='https://SamAndTheo3DP.etsy.com'">
 
 <script data-ad-client="ca-pub-5521618430511279" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
@@ -20,12 +19,26 @@
 <link rel="stylesheet" href="style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Test Script -->
+<script>
+function getParameterByName(name, url = window.location.href) {
+    name = name.replace(/[\[\]]/g, '\\$&');
+    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
+var link = getParameterByName('l');
+document.getElementById("test").textContent = 'URL Param = ' + link
+</script>
 </head>
 
 <body>
 <br><br><br>
 <div class="menu">
-	<h1>You are being redirected...</h1>
+    <h1 id="test1">Error 404</h1>
 </div>
 
 <br><br>
