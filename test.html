@@ -22,17 +22,8 @@
 
 <!-- Test Script -->
 <script>
-function getParameterByName(name, url = window.location.href) {
-    name = name.replace(/[\[\]]/g, '\\$&');
-    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
-        results = regex.exec(url);
-    if (!results) return null;
-    if (!results[2]) return '';
-    return decodeURIComponent(results[2].replace(/\+/g, ' '));
-}
-getParameterByName()
-var link = getParameterByName('l');
-document.getElementById("test").textContent = 'URL Param = ' + link
+const params = new URLSearchParams(window.location.search)
+document.getElementById("test").textContent = params.get('l')
 </script>
 </head>
 
