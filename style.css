@@ -1,4 +1,19 @@
-.banner {
+.slides{
+	box-sizing: border-box;
+	background-color:#e5e5e5;
+	box-shadow: 4px 10px 30px rgba(0,0,0,0.50);
+	border-radius: 25px;
+	margin: auto;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	padding: 5px; 
+  display: block;
+  width: 61%;
+  height: 40%;
+  object-fit: cover;
+}
+
+.banner{
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -27,11 +42,11 @@
 	text-align:center;
 	font-family: 'Poppins', sans-serif;
 	padding: 5px;
-	display:block;
+	display: block;
 }
 
 @media only screen and (max-width:1100px){
-	.menu{
+	.menu, .slides{
 		width: 95%;
 	}
   .banner{
@@ -43,7 +58,7 @@
 }
 
 /* Drop down menu buttons */
-.dropbtn {
+.dropbtn{
   background-image: rgba(0,0,0,0.00);
   color: black;
   padding: 16px;
@@ -54,7 +69,7 @@
   width: 200px;
 }
 
-.dropdown {
+.dropdown{
   position: relative;
   display: inline-block;
   margin-left: 5px;
@@ -63,7 +78,7 @@
   margin-bottom: 2px;
 }
 
-.dropdown-content {
+.dropdown-content{
   display: none;
   position: absolute;
   background-color: #f1f1f1;
@@ -73,7 +88,7 @@
   border-radius: 18px;
 }
 
-.dropdown-content a {
+.dropdown-content a{
   color: black;
   padding: 12px 16px;
   text-decoration: none;
@@ -81,45 +96,45 @@
   border-radius: 18px;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover{background-color: #ddd;}
 
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content{display: block;}
 
-.dropdown:hover .dropbtn {background: lightgrey;}
+.dropdown:hover .dropbtn{background: lightgrey;}
 
-.menu, .footer, .banner {
+.menu, .footer, .banner, .slides{
 animation: fadeIn ease 1s;
 -webkit-animation: fadeIn ease 1.5s;
 -moz-animation: fadeIn ease 1.5s;
 -o-animation: fadeIn ease 1.5s;
 -ms-animation: fadeIn ease 1.5s;
 }
-@keyframes fadeIn {
-0% {opacity:0;}
-100% {opacity:1;}
+@keyframes fadeIn{
+0%{opacity:0;}
+100%{opacity:1;}
 }
 
-@-moz-keyframes fadeIn {
-0% {opacity:0;}
-100% {opacity:1;}
+@-moz-keyframes fadeIn{
+0%{opacity:0;}
+100%{opacity:1;}
 }
 
-@-webkit-keyframes fadeIn {
-0% {opacity:0;}
-100% {opacity:1;}
+@-webkit-keyframes fadeIn{
+0%{opacity:0;}
+100%{opacity:1;}
 }
 
-@-o-keyframes fadeIn {
-0% {opacity:0;}
-100% {opacity:1;}
+@-o-keyframes fadeIn{
+0%{opacity:0;}
+100%{opacity:1;}
 }
 
-@-ms-keyframes fadeIn {
-0% {opacity:0;}
-100% {opacity:1;}
+@-ms-keyframes fadeIn{
+0%{opacity:0;}
+100%{opacity:1;}
 }
 
-.footer {
+.footer{
   box-sizing: border-box;
   margin: auto;
   width: 100%;

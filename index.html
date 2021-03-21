@@ -30,53 +30,13 @@
 <link rel="stylesheet" href="style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script>
-	$(document).ready(function(){
-	  // Add smooth scrolling to all links
-	  $("a").on('click', function(event) {
+<script src="smoothscroll.js"></script>
 
-	    // Make sure this.hash has a value before overriding default behavior
-	    if (this.hash !== "") {
-	      // Prevent default anchor click behavior
-	      event.preventDefault();
-
-	      // Store hash
-	      var hash = this.hash;
-
-	      // Using jQuery's animate() method to add smooth page scroll
-	      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-	      $('html, body').animate({
-	        scrollTop: $(hash).offset().top
-	      }, 800, function(){
-
-	        // Add hash (#) to URL when done scrolling (default click behavior)
-	        window.location.hash = hash;
-	      });
-	    } // End if
-	  });
-	});
-	</script>
-	<script type="text/javascript">
-		$("#slideshow > div:gt(0)").hide();
-
-		setInterval(function() { 
-		  $('#slideshow > div:first')
-		    .fadeOut(1000)
-		    .next()
-		    .fadeIn(1000)
-		    .end()
-		    .appendTo('#slideshow');
-		},  3000);
-</script>
 </head>
 
 <body>
 <img src="img/banner.png" class="banner">
-<!--<div class="menu">
-<img class="banner" src="img/banner.png" style="margin-top: 10px; width: 60%;">
-<h1>Website Coming Soon!</h1>
-<h3><a href="https://shop.SamAndTheo3DP.com">Check out our Etsy Store!</a></h3>
-</div>-->
+
 
 <div id="menubar" class="menu">
 	<div class="dropdown">
@@ -107,9 +67,12 @@
 
 <br><br>
 
-<div class="menu">
-	<h1>Website coming soon!</h1>
+<div class="slideshowcontainer">
+	<img class="slides" src="banner.jpg">
+	<img class="slides" src="favicon.png">
 </div>
+
+<script src="slideshow.js"></script>
 
 <br><br>
 
