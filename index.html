@@ -78,6 +78,20 @@
 <script src="js/slideshow.js"></script>
 
 <div class="menu">
+	<!-- Place <div> tag where you want the feed to appear -->
+	<div id="curator-feed-default-feed-layout" style="margin-top: 10px;"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
+	<!-- The Javascript can be moved to the end of the html page before the </body> tag -->
+	<script type="text/javascript">
+	/* curator-feed-default-feed-layout */
+	(function(){
+	var i, e, d = document, s = "script";i = d.createElement("script");i.async = 1;
+	i.src = "https://cdn.curator.io/published/f40ba05f-1ac3-4be0-9363-2f9fff418fd1.js";
+	e = d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
+	})();
+	</script>
+</div>
+
+<div class="menu">
 	<h1>Title</h1>
 	<p style="font-size: large;">Paragraph Text</p>
 
