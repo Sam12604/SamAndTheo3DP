@@ -34,6 +34,16 @@
 	display:block;
 }
 
+.title{
+	box-sizing: border-box;
+	margin: auto;
+	width: 61%;
+	text-align:center;
+	font-family: 'Poppins', sans-serif;
+	padding: 5px;
+  display: block;
+}
+
 .menu{
 	box-sizing: border-box;
 	background-color:#e5e5e5;
