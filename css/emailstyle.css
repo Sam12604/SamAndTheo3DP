@@ -1,122 +1,48 @@
-.slides{
-	box-sizing: border-box;
-	background-color:#e5e5e5;
-	box-shadow: 4px 10px 30px rgba(0,0,0,0.50);
-	border-radius: 25px;
-	margin: auto;
-	text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap');
+
+html{
 	font-family: 'Poppins', sans-serif;
-	padding: 5px; 
-  display: block;
-  width: 61%;
-  height: 45%;
-  object-fit: cover;
-  margin-top: 40px;
-  margin-bottom: 40px;
+	text-align: center;
 }
 
-.banner{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 45%;
-  margin-top: 30px;
-  margin-bottom: 20px;
+.display{
+	box-sizing: border-box;
+	margin: auto;
+	box-shadow: 4px 10px 30px rgba(0,0,0,0.30);
+	padding: 20px;
+	width: 60%;
+	border-radius: 20px;
+	background-image: linear-gradient(130deg, #f8010c 0%, #f95600 25%, #f7054f 70%, #f95303 90%);
 }
 
 .socials{
 	box-sizing: border-box;
 	margin: auto;
-	width: 61%;
-	text-align:right;
-	font-family: 'Poppins', sans-serif;
 	padding: 5px;
 	display:block;
-}
-
-.title{
-	box-sizing: border-box;
-	margin: auto;
-	width: 61%;
-	text-align:center;
-	font-family: 'Poppins', sans-serif;
-	padding: 5px;
-  display: block;
 }
 
 .menu{
 	box-sizing: border-box;
 	background-color:#e5e5e5;
-	box-shadow: 4px 10px 30px rgba(0,0,0,0.50);
+	box-shadow: 4px 10px 30px rgba(0,0,0,0.30);
 	border-radius:25px;
 	margin: auto;
-	width: 61%;
-	text-align: center;
-	font-family: 'Poppins', sans-serif;
+	width: 90%;
 	padding: 5px;
-  display: block;
-  margin-top: 40px;
-  margin-bottom: 40px;
+	display: block;
 }
 
 @media only screen and (max-width:1100px){
-	.menu, .slides{
-		width: 95%;
+	.display{
+		width: 92%;
 	}
-  .banner{
-    width: 85%;
-  }
-  .socials{
-    text-align: center;
+	.menu{
+		width: 97%;
   }	
 }
 
-/* Drop down menu buttons */
-.dropbtn{
-  background-image: rgba(0,0,0,0.00);
-  color: black;
-  padding: 16px;
-  font-size: 16px;
-  font-family: 'Poppins', sans-serif;
-  border: none;
-  border-radius: 20px;
-  width: 200px;
-}
-
-.dropdown{
-  position: relative;
-  display: inline-block;
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-top: 2px;
-  margin-bottom: 2px;
-}
-
-.dropdown-content{
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  border-radius: 18px;
-}
-
-.dropdown-content a{
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  border-radius: 18px;
-}
-
-.dropdown-content a:hover{background-color: #ddd;}
-
-.dropdown:hover .dropdown-content{display: block;}
-
-.dropdown:hover .dropbtn{background: lightgrey;}
-
-.menu, .footer, .banner, .slides{
+.display, .footer{
 animation: fadeIn ease 1s;
 -webkit-animation: fadeIn ease 1.5s;
 -moz-animation: fadeIn ease 1.5s;
