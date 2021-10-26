@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
-@import url('https://samandtheo3dp.com/file/fonts/theboldfont.ttf');
+
+@font-face {
+	font-family: 'The Bold Font';
+	src: url('files/fonts/theboldfont.ttf'); 
+	src: 
+		local('The Bold Font'),
+		local('The Bold Font'),
+		url('files/fonts/theboldfont.ttf') 
+		format('truetype');
+}
 
 body{
     width: 45%;
@@ -7,7 +16,7 @@ body{
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    font-family: 'The Bold Font', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: xx-large;
 }
 
