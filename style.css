@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+html{
+    background-image: url('img/bgtexture.png');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=The Bold Font:wght@500;600&display=swap');
 
 @font-face {
 	font-family: 'The Bold Font';
@@ -16,7 +20,7 @@ body{
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'The Bold Font', sans-serif;
     font-size: xx-large;
 }
 
@@ -30,7 +34,7 @@ body{
 	margin: auto;
 	width: 100%;
 	text-align: center;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'The Bold Font', sans-serif;
 	padding: 5px;
 	display: block;
 }
@@ -41,7 +45,7 @@ body{
     margin: auto;
     width: 100%;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'The Bold Font', sans-serif;
     padding: 5px;
     display: block;
 }
