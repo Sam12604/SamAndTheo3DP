@@ -25,7 +25,9 @@ body{
 }
 
 #logo{
-    width: 60%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 40%;
     filter: drop-shadow(10px 10px 20px rgba(0,0,0,0.50));
 }
 
